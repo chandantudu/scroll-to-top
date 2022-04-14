@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Scroll to Top</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo"><a href="https://www.devbabu.com">DevBabu</a></div>
+    </header>
+    <div class="container">
+      <h1>🔝 Page scroll to top</h1>
+      <section>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa
+          iste, blanditiis molestias accusamus autem modi aperiam, architecto
+          amet id error culpa incidunt fugiat necessitatibus, asperiores
+          accusantium? Quod tempore quibusdam id quaerat veniam ipsa
+          necessitatibus. Minus labore nemo ducimus voluptatibus.
+        </p>
+        <hr />
+        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+          in ullam odio necessitatibus, minima earum aliquid doloremque atque
+          non omnis possimus nisi labore ipsum quas quod expedita. Animi,
+          incidunt ullam.
+        </p>
+        <hr />
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+          mollitia consequuntur, vel, perferendis vitae consectetur nulla
+          delectus eaque nostrum neque ipsam debitis quisquam obcaecati hic
+          placeat incidunt magnam illo et ea iusto dolorum iure. Eligendi
+          dolorum assumenda porro dolore labore soluta non!
+        </p>
+        <hr />
+        <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam!
+        </h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+          maiores nulla corporis laboriosam eum dignissimos distinctio corrupti
+          architecto veniam obcaecati explicabo cumque in aperiam sit soluta
+          fuga accusantium nihil nobis recusandae saepe, minus, ratione officia!
+          Asperiores id suscipit similique magnam. Nobis enim sint dolorum eaque
+          quisquam expedita suscipit laboriosam repellendus?
+        </p>
+        <hr />
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
+          laboriosam asperiores nulla excepturi nam necessitatibus!
+        </p>
+        <hr />
+        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+          in ullam odio necessitatibus, minima earum aliquid doloremque atque
+          non omnis possimus nisi labore ipsum quas quod expedita. Animi,
+          incidunt ullam.
+        </p>
+        <hr />
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+          mollitia consequuntur, vel, perferendis vitae consectetur nulla
+          delectus eaque nostrum neque ipsam debitis quisquam obcaecati hic
+          placeat incidunt magnam illo et ea iusto dolorum iure. Eligendi
+          dolorum assumenda porro dolore labore soluta non!
+        </p>
+        <hr />
+        <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam!
+        </h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+          maiores nulla corporis laboriosam eum dignissimos distinctio corrupti
+          architecto veniam obcaecati explicabo cumque in aperiam sit soluta
+          fuga accusantium nihil nobis recusandae saepe, minus, ratione officia!
+          Asperiores id suscipit similique magnam. Nobis enim sint dolorum eaque
+          quisquam expedita suscipit laboriosam repellendus?
+        </p>
+        <hr />
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
+          laboriosam asperiores nulla excepturi nam necessitatibus!
+        </p>
+      </section>
+    </div>
+    <div class="scroll-top" id="scrollTopBtn"><span>🠕</span></div>
+
+    <script>
+      var scrollTopBtn = document.getElementById("scrollTopBtn");
+      function onScroll() {
+        if (document.documentElement.scrollTop > 500) {
+          scrollTopBtn.style.display = "block";
+        } else {
+          scrollTopBtn.style.display = "none";
+        }
+      }
+
+      window.addEventListener("scroll", onScroll);
+
+      scrollTopBtn.addEventListener("click", function () {
+        document.documentElement.scrollTop = 0;
+      });
+    </script>
+  </body>
+</html>
